@@ -11,7 +11,7 @@ export default [
     name: 'TransportHome',
     component: TransportHome,
     options: {
-      title: '微信',
+      title: '首页',
       tabBarIcon: ({ focused }) => {
         //这里是死坑，特么我少一个{}， 这样( focused )就失效了
         return <Icon name="weixin" size={22} color={focused ? '#60bb66' : '#AAAAAB'} />;
@@ -22,7 +22,7 @@ export default [
     name: 'OrderHome',
     component: OrderHome,
     options: {
-      title: '通讯录',
+      title: '第二页',
       tabBarIcon: ({ focused }) => {
         return <Icon name="usergroup-add" size={22} color={focused ? '#60bb66' : '#AAAAAB'} />;
       },

@@ -76,7 +76,7 @@ class SigninScreen extends Component {
 
     return (
       <View style={styles.block}>
-        <ImageBackground source={require('../../utils/img/denglu.png')} style={{ flex: 1 }}>
+        <ImageBackground source={require('../../utils/img/09.png')} style={{ flex: 1 }}>
           <Flex align="center" direction="column" style={{ flex: 1 }}>
             <Animatable.Text
               style={{ fontSize: 28, fontWeight: '800', color: '#696969', paddingTop: '40%' }}

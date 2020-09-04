@@ -34,7 +34,7 @@ export const stackPageData = [
       return {
         headerBackTitleVisible: false,
         headerBackImage: () => <Image />,
-        title: !tabName ? '微信(66)' : tabName == 'TransportHome' ? '微信(66)' : tabName == 'Find' ? '发现' : tabName == 'OrderHome' ? '通讯录' : '',
+        title: !tabName ? '首页' : tabName == 'TransportHome' ? '首页' : tabName == 'Find' ? '发现' : tabName == 'OrderHome' ? '通讯录' : '',
         headerStyle: { backgroundColor: tabName == 'MyHome' ? '#fff' : '#f2f2f2' },
         headerTintColor: '#333333',
         headerRight: () =>
