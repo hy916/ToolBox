@@ -43,18 +43,21 @@ export default class MyScreen extends Component {
             onAudioFocusChanged={this.onAudioFocusChanged}//音频焦点丢失时的回调 - 如果焦点丢失则暂停
             repeat={false}//确定在到达结尾时是否重复播放视频。
           /> */}
-          <Swiper style={styles.wrapper} showsButtons={false} autoplay autoplayTimeout={2}>
+          <Swiper style={styles.wrapper} autoplay showsPagination={false} autoplayTimeout={2}>
             <View style={styles.slide}>
-              <Image resizeMode="stretch" style={styles.image} source={require('../../utils/img/01.png')} />
+              <Image resizeMode="stretch" style={styles.image} source={require('../../utils/img/666.png')} />
             </View>
             <View style={styles.slide}>
-              <Image resizeMode="stretch" style={styles.image} source={require('../../utils/img/02.png')} />
+              <Image resizeMode="stretch" style={styles.image} source={require('../../utils/img/30.png')} />
             </View>
             <View style={styles.slide}>
-              <Image resizeMode="stretch" style={styles.image} source={require('../../utils/img/03.png')} />
+              <Image resizeMode="stretch" style={styles.image} source={require('../../utils/img/28.png')} />
             </View>
             <View style={styles.slide}>
-              <Image resizeMode="stretch" style={styles.image} source={require('../../utils/img/04.png')} />
+              <Image resizeMode="stretch" style={styles.image} source={require('../../utils/img/25.png')} />
+            </View>
+            <View style={styles.slide}>
+              <Image resizeMode="stretch" style={styles.image} source={require('../../utils/img/26.png')} />
             </View>
           </Swiper>
           <ScrollView></ScrollView>
@@ -66,11 +69,9 @@ export default class MyScreen extends Component {
 const styles = StyleSheet.create({
   slide: {
     flex: 1,
-    width: '100%',
-    height: '0%',
   },
   image: {
     width: '100%',
-    height: '100%',
+    height: '60%',
   },
 });

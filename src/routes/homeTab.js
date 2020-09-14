@@ -13,7 +13,6 @@ export default [
     options: {
       title: '首页',
       tabBarIcon: ({ focused }) => {
-        //这里是死坑，特么我少一个{}， 这样( focused )就失效了
         return <Icon name="weixin" size={22} color={focused ? '#60bb66' : '#AAAAAB'} />;
       },
     },

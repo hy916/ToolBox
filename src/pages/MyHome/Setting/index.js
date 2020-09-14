@@ -150,10 +150,12 @@ export default class Main extends Component {
   }
   // 歌词
   renderItem() {
+    console.log('111111111--->>');
     // 数组
     var itemAry = [];
     for (var i = 0; i < lyrObj.length; i++) {
       var item = lyrObj[i].txt;
+      console.log('item----->>>', item);
       if (this.state.currentTime.toFixed(2) > lyrObj[i].total) {
         //正在唱的歌词
         itemAry.push(
@@ -171,7 +173,7 @@ export default class Main extends Component {
         );
       }
     }
-
+    console.log('itemAry', itemAry);
     return itemAry;
   }
   // 播放器加载好时调用,其中有一些信息带过来
@@ -359,6 +361,7 @@ export default class Main extends Component {
                   this._scrollView = scrollView;
                 }}
               >
+                {console.log('111111111222222--->>')}
                 {this.renderItem()}
               </ScrollView>
             </View>

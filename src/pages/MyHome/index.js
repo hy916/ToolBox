@@ -6,14 +6,14 @@ export default class MyScreen extends Component {
   render() {
     const { navigation } = this.props;
     return (
-      <SafeAreaView style={{flex:1}}>
-        <View style={{flex:1}}>
+      <SafeAreaView style={{ flex: 1 }}>
+        <View style={{ flex: 1 }}>
           <List
             flat={true}
             data={[
-              { title: '企业开票' },
-              { title: '我的熟车' },
-              { title: '设置', onPress: () => navigation.navigate('MyHomeSetting')  },
+              { title: '企业开票', onPress: () => navigation.navigate('Adds') },
+              { title: '我的熟车', onPress: () => navigation.navigate('Gesture') },
+              { title: '设置', onPress: () => navigation.navigate('MyHomeSetting') },
               { title: '退出登录', onPress: () => navigation.replace('SignIn') },
             ]}
             renderItem={({ item, index }) => {
@@ -23,14 +23,14 @@ export default class MyScreen extends Component {
                   extra={<Icon name="right" fill="#abb0b5" size={14} />}
                   size="large"
                   paddingLeft={15}
-                  style={{ borderBottomWidth: 0, }}
+                  style={{ borderBottomWidth: 0 }}
                   onPress={item.onPress || null}
                 >
                   <View>
                     <Text>{item.title}</Text>
                   </View>
                 </List.Item>
-              )
+              );
             }}
           />
         </View>
